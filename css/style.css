@@ -1,0 +1,107 @@
+body{
+    background-image: url("../images/mountain-bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    overflow: hidden;
+    font-family: monospace;
+}
+nav{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.toggle {
+    display: none;
+}
+.nav{
+    padding-right: 30px
+}
+
+.nav-items{
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+.nav-items a{
+    color: rgba(241, 237, 237, 0.8);
+    margin-left: 30px;
+    font-weight: 100;
+}
+.nav-items a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+li input{
+    width: 80px;
+    height: 20px;
+}
+
+input[type="search"]{
+    font-size: 12px;
+    font-family:'Courier New', Courier, monospace ;
+    background: rgba(197, 194, 194,0.3);
+    border: 0.4px solid rgba(253, 249, 249,0.2);
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 30px;
+}
+input::placeholder{
+     color: rgba(241, 237, 237, 0.8);
+}
+span i{
+    font-size: 12px;
+    color: rgba(241, 237, 237, 0.8);
+    position: relative;
+    right: 18px;
+    top: 1px;
+}
+section{
+    margin-top: 120px;
+    background-color: rgba(255, 254, 254, 0.1);
+    width: 60%;
+    color: white;
+    border-radius: 0 3px 3px 0;
+}
+
+.text-section{
+    padding: 50px;
+}
+.text-section p{
+    font-weight: lighter;
+}
+.social-links{
+    margin-top: 130px;
+    margin-right: 20px;
+}
+
+i{
+    font-size: 20px;
+    color: white;
+    margin-right: 30px;
+}
+
+@media all and (max-width:1023px){
+    .social-links{
+        margin-bottom: 40px;
+    }
+    .margin-div{
+        display: visible;
+    }
+    .nav-items{
+        display: none;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .toggle{
+        display: block;
+    }
+}
+
+@media all and (max-width:721px){
+    section{
+        width: 100%;
+    }
+
+}
